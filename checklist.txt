@@ -1,0 +1,23 @@
+Checklist
+
+# add two positive numbers
+# add two negative numbers
+
+# substract two positive numbers
+# substract two negative numbers
+
+# multiply two positive numbers
+# multiply two negative numbers
+
+# divide two positive numbers
+# divide two negative numbers
+
+# dividing by zero
+
+# do all operations with two int
+# do all operations with two floats
+
+# empty inputs
+# very long numbers
+# choose operation out of scope
+# input letter than number
