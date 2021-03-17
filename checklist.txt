@@ -1,23 +1,29 @@
 Checklist
 
-# add two positive numbers
-# add two negative numbers
+add two positive numbers int
+add two positive numbers int and float
+add two negative numbers int
+add two negative numbers int and float
 
-# substract two positive numbers
-# substract two negative numbers
+subtract two positive numbers int
+subtract two positive numbers int and float
+subtract two negative numbers int
+subtract two negative numbers int and float
 
-# multiply two positive numbers
-# multiply two negative numbers
+multiply two positive numbers int
+multiply two positive numbers int and float
+multiply two negative numbers int
+multiply two negative numbers int and float
 
-# divide two positive numbers
-# divide two negative numbers
 
-# dividing by zero
+divide two positive numbers int
+divide two positive numbers int and float
+divide two negative numbers int
+divide two negative numbers int and float
 
-# do all operations with two int
-# do all operations with two floats
+dividing by zero
 
-# empty inputs
-# very long numbers
-# choose operation out of scope
-# input letter than number
+test add with empty inputs
+very long numbers
+choose operation out of scope
+input letter than number

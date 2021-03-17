@@ -4,7 +4,13 @@ class Calculator:
         pass
 
     def add(self, x, y):
-        return x + y
+        if x is not None and y is not None:
+            return x + y
+        elif x is not None:
+            return x
+        elif y is not None:
+            return y
+        return 0
 
     def subtract(self, x, y):
         return x - y
