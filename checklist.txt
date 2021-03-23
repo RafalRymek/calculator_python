@@ -21,7 +21,11 @@ divide two positive numbers int and float
 divide two negative numbers int
 divide two negative numbers int and float
 
-dividing by zero
+dividing int by zero
+dividing float by zero
+dividing negative int by zero
+dividing neagtive float by zero
+
 
 test add with empty inputs
 very long numbers

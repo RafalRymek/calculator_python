@@ -20,7 +20,7 @@ class MyCalculatorTest(unittest.TestCase):
         self.assertEqual(-6.2, self.calculator.add(-4, -2.2), msg="Wrong calculation result")
 
     def test_subtract_two_positive_int(self):
-        self.assertEqual(2, self.calculator.subtract(3,1), msg="Wrong calculation result")
+        self.assertEqual(2, self.calculator.subtract(3, 1), msg="Wrong calculation result")
 
     def test_subtract_two_positive_int_and_float(self):
         self.assertEqual(0.0, self.calculator.subtract(3, 3.0), msg="Wrong calculation result")
@@ -69,6 +69,9 @@ class MyCalculatorTest(unittest.TestCase):
     def test_input_letter_than_number(self):
         with self.assertRaises(TypeError):
             self.calculator.add("a", 5)
+
+    def test_input_float_with_two_numbers_after_coma(self):
+        self.assertEqual(9.8596, self.calculator.multiply(3.14, 3.14))
 
 
 if __name__ == '__main__':

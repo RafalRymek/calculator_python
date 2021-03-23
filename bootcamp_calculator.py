@@ -3,7 +3,8 @@ class Calculator:
     def __init__(self):
         pass
 
-    def add(self, x, y):
+    @staticmethod
+    def add(x, y):
         if x is not None and y is not None:
             return x + y
         elif x is not None:
@@ -12,16 +13,20 @@ class Calculator:
             return y
         return 0
 
-    def subtract(self, x, y):
+    @staticmethod
+    def subtract(x, y):
         return x - y
 
-    def multiply(self, x, y):
+    @staticmethod
+    def multiply(x, y):
         return x * y
 
-    def divide(self, x, y):
+    @staticmethod
+    def divide(x, y):
         return x / y
 
-    def choice_maker(self):
+    @staticmethod
+    def choice_maker():
         print("**************************\nWelcome to the Calculator\n**************************")
 
         while True:
@@ -31,8 +36,8 @@ class Calculator:
                 print("Bye!")
                 break
 
-            first_num = int(input("Enter first number: "))
-            second_num = int(input("Enter second number: "))
+            first_num = float(input("Enter first number: "))
+            second_num = float(input("Enter second number: "))
             print(" 1. for ADDITION")
             print(" 2. for SUBTRACTION")
             print(" 3. for MULTIPLICATION")
@@ -40,13 +45,13 @@ class Calculator:
 
             choice = input("Please select operation: ")
             if choice == "1":
-                print(Calculator.add(self, first_num, second_num))
+                print(Calculator.add(first_num, second_num))
             elif choice == "2":
-                print(Calculator.subtract(self, first_num, second_num))
+                print(Calculator.subtract(first_num, second_num))
             elif choice == "3":
-                print(Calculator.multiply(self, first_num, second_num))
+                print(Calculator.multiply(first_num, second_num))
             elif choice == "4":
-                print(Calculator.divide(self, first_num, second_num))
+                print(Calculator.divide(first_num, second_num))
             else:
                 print("Something goes wrong, please try again")
 
