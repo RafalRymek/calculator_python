@@ -47,17 +47,13 @@ class MyCalculatorTest(unittest.TestCase):
         self.assertEqual(3, self.calculator.divide(3, 1), msg="Wrong calculation result")
 
     def test_divide_two_positive_int_and_float(self):
-        self.assertEqual(1.0, self.calculator.divide(3, 3.0), msg="Wrong calculation result")
+        self.assertEqual(0.449, self.calculator.divide(3.14, 7), msg="Wrong calculation result")
 
     def test_divide_two_negative_int(self):
         self.assertEqual(1, self.calculator.divide(-2, -2), msg="Wrong calculation result")
 
     def test_divide_two_negative_int_and_float(self):
         self.assertEqual(2.0, self.calculator.divide(-4, -2.0), msg="Wrong calculation result")
-
-    def test_divide_by_zero(self):
-        with self.assertRaises(ZeroDivisionError):
-            self.calculator.divide(3, 0)
 
     def test_add_empty_input(self):
         self.assertIsNotNone(self.calculator.add(None, 5))

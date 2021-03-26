@@ -23,7 +23,10 @@ class Calculator:
 
     @staticmethod
     def divide(x, y):
-        return x / y
+        if y == 0:
+            return "Validation error. You can’t divide by 0…"
+        else:
+            return round((x / y), 3)
 
     @staticmethod
     def choice_maker():
