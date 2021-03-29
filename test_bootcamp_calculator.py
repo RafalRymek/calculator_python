@@ -67,7 +67,7 @@ class MyCalculatorTest(unittest.TestCase):
             self.calculator.add("a", 5)
 
     def test_input_float_with_two_numbers_after_coma(self):
-        self.assertEqual(9.8596, self.calculator.multiply(3.14, 3.14))
+        self.assertEqual(9.86, self.calculator.multiply(3.14, 3.14))
 
 
 if __name__ == '__main__':
