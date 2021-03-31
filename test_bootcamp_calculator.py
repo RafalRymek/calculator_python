@@ -55,6 +55,9 @@ class MyCalculatorTest(unittest.TestCase):
     def test_divide_two_negative_int_and_float(self):
         self.assertEqual(2.0, self.calculator.divide(-4, -2.0), msg="Wrong calculation result")
 
+    def test_divide_by_zero(self):
+        self.assertEqual("Validation error. You can’t divide by 0…", self.calculator.divide(3, 0))
+
     def test_add_empty_input(self):
         self.assertIsNotNone(self.calculator.add(None, 5))
 
