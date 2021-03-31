@@ -6,7 +6,7 @@ class Calculator:
     @staticmethod
     def add(x, y):
         if x is not None and y is not None:
-            return x + y
+            return round((x + y), 3)
         elif x is not None:
             return x
         elif y is not None:
@@ -15,15 +15,18 @@ class Calculator:
 
     @staticmethod
     def subtract(x, y):
-        return x - y
+        return round((x - y), 3)
 
     @staticmethod
     def multiply(x, y):
-        return x * y
+        return round((x * y), 3)
 
     @staticmethod
     def divide(x, y):
-        return x / y
+        if y == 0:
+            return "Validation error. You can’t divide by 0…"
+        else:
+            return round((x / y), 3)
 
     @staticmethod
     def choice_maker():

@@ -47,7 +47,7 @@ class MyCalculatorTest(unittest.TestCase):
         self.assertEqual(3, self.calculator.divide(3, 1), msg="Wrong calculation result")
 
     def test_divide_two_positive_int_and_float(self):
-        self.assertEqual(1.0, self.calculator.divide(3, 3.0), msg="Wrong calculation result")
+        self.assertEqual(0.449, self.calculator.divide(3.14, 7), msg="Wrong calculation result")
 
     def test_divide_two_negative_int(self):
         self.assertEqual(1, self.calculator.divide(-2, -2), msg="Wrong calculation result")
@@ -56,8 +56,7 @@ class MyCalculatorTest(unittest.TestCase):
         self.assertEqual(2.0, self.calculator.divide(-4, -2.0), msg="Wrong calculation result")
 
     def test_divide_by_zero(self):
-        with self.assertRaises(ZeroDivisionError):
-            self.calculator.divide(3, 0)
+        self.assertEqual("Validation error. You can’t divide by 0…", self.calculator.divide(3, 0))
 
     def test_add_empty_input(self):
         self.assertIsNotNone(self.calculator.add(None, 5))
@@ -71,7 +70,7 @@ class MyCalculatorTest(unittest.TestCase):
             self.calculator.add("a", 5)
 
     def test_input_float_with_two_numbers_after_coma(self):
-        self.assertEqual(9.8596, self.calculator.multiply(3.14, 3.14))
+        self.assertEqual(9.86, self.calculator.multiply(3.14, 3.14))
 
 
 if __name__ == '__main__':
